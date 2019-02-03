@@ -16,3 +16,11 @@ function myMoney(int $need):void
         }
     }
 }
+if ($argc == 2) {
+    $need = (int)$argv[1];
+    if ($need > 0 && $need <= 100000) {
+        myMoney($need);
+    } else {
+        echo "Досупна сумма от 1 гривны до 100 000 тыс.\n";
+    }
+}
